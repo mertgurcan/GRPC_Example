@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15A808E7598F8622D24F654B /* Pods_GRPC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA8D3A272C0001651D02B1D /* Pods_GRPC_Example.framework */; };
 		FC7443282752787E004F1330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7443272752787E004F1330 /* AppDelegate.swift */; };
 		FC74432A2752787E004F1330 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7443292752787E004F1330 /* SceneDelegate.swift */; };
 		FC74432C2752787E004F1330 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74432B2752787E004F1330 /* ViewController.swift */; };
 		FC74432F2752787E004F1330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC74432D2752787E004F1330 /* Main.storyboard */; };
 		FC74433127527881004F1330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC74433027527881004F1330 /* Assets.xcassets */; };
 		FC74433427527881004F1330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC74433227527881004F1330 /* LaunchScreen.storyboard */; };
+		FCD954022752966D007C7F19 /* Events.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD954002752966C007C7F19 /* Events.grpc.swift */; };
+		FCD954032752966D007C7F19 /* Events.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD954012752966D007C7F19 /* Events.pb.swift */; };
+		FCD954052752968C007C7F19 /* GRPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD954042752968B007C7F19 /* GRPCHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C9A86079D2CC4B0527ADC6E /* Pods-GRPC Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRPC Example.release.xcconfig"; path = "Target Support Files/Pods-GRPC Example/Pods-GRPC Example.release.xcconfig"; sourceTree = "<group>"; };
+		97550DD8BA131295D304E9BC /* Pods-GRPC Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRPC Example.debug.xcconfig"; path = "Target Support Files/Pods-GRPC Example/Pods-GRPC Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EEA8D3A272C0001651D02B1D /* Pods_GRPC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GRPC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7443242752787E004F1330 /* GRPC Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GRPC Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7443272752787E004F1330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC7443292752787E004F1330 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		FC74433027527881004F1330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC74433327527881004F1330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC74433527527881004F1330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD954002752966C007C7F19 /* Events.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.grpc.swift; sourceTree = "<group>"; };
+		FCD954012752966D007C7F19 /* Events.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.pb.swift; sourceTree = "<group>"; };
+		FCD954042752968B007C7F19 /* GRPCHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRPCHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A808E7598F8622D24F654B /* Pods_GRPC_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6383FB15B80454AAA7B7E8AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEA8D3A272C0001651D02B1D /* Pods_GRPC_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFF6F73787718E9AC7DC38A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97550DD8BA131295D304E9BC /* Pods-GRPC Example.debug.xcconfig */,
+				2C9A86079D2CC4B0527ADC6E /* Pods-GRPC Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FC74431B2752787E004F1330 = {
 			isa = PBXGroup;
 			children = (
 				FC7443262752787E004F1330 /* GRPC Example */,
 				FC7443252752787E004F1330 /* Products */,
+				EFF6F73787718E9AC7DC38A8 /* Pods */,
+				6383FB15B80454AAA7B7E8AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +89,9 @@
 				FC7443272752787E004F1330 /* AppDelegate.swift */,
 				FC7443292752787E004F1330 /* SceneDelegate.swift */,
 				FC74432B2752787E004F1330 /* ViewController.swift */,
+				FCD954042752968B007C7F19 /* GRPCHandler.swift */,
+				FCD954002752966C007C7F19 /* Events.grpc.swift */,
+				FCD954012752966D007C7F19 /* Events.pb.swift */,
 				FC74432D2752787E004F1330 /* Main.storyboard */,
 				FC74433027527881004F1330 /* Assets.xcassets */,
 				FC74433227527881004F1330 /* LaunchScreen.storyboard */,
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC74433827527881004F1330 /* Build configuration list for PBXNativeTarget "GRPC Example" */;
 			buildPhases = (
+				08B420B5EA985ECB26D1522A /* [CP] Check Pods Manifest.lock */,
 				FC7443202752787E004F1330 /* Sources */,
 				FC7443212752787E004F1330 /* Frameworks */,
 				FC7443222752787E004F1330 /* Resources */,
+				204BD2FEB81F408BF8BD54ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +168,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08B420B5EA985ECB26D1522A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GRPC Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		204BD2FEB81F408BF8BD54ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GRPC Example/Pods-GRPC Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GRPC Example/Pods-GRPC Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GRPC Example/Pods-GRPC Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC7443202752787E004F1330 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +217,10 @@
 			files = (
 				FC74432C2752787E004F1330 /* ViewController.swift in Sources */,
 				FC7443282752787E004F1330 /* AppDelegate.swift in Sources */,
+				FCD954032752966D007C7F19 /* Events.pb.swift in Sources */,
 				FC74432A2752787E004F1330 /* SceneDelegate.swift in Sources */,
+				FCD954052752968C007C7F19 /* GRPCHandler.swift in Sources */,
+				FCD954022752966D007C7F19 /* Events.grpc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +364,7 @@
 		};
 		FC74433927527881004F1330 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97550DD8BA131295D304E9BC /* Pods-GRPC Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +393,7 @@
 		};
 		FC74433A27527881004F1330 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9A86079D2CC4B0527ADC6E /* Pods-GRPC Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
