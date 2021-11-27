@@ -1,9 +1,9 @@
-#How to gRPC on Swift Projects
+## How to gRPC on Swift Projects
 
 This file aims to guide you to gRPC implementation on your swift project.
 
 
-##Installing the Protobuf Compiler 
+## Installing the Protobuf Compiler 
 
 
 * Open Terminal and download official protobuffer compiler
