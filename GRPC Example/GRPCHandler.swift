@@ -13,20 +13,14 @@ import SwiftProtobuf
 
 class GRPCHandler {
 
-    var client : EventServiceClient?
+    var client : EventServiceClient
+    let configuration = ClientConnection.Configuration(target: .hostAndPort("127.0.0.1", 50051), eventLoopGroup: MultiThreadedEventLoopGroup(numberOfThreads: 1))
 
-    public static let shared = GRPCHandler()
-
-    func createClient(){
-        let configuration = ClientConnection.Configuration(target: .hostAndPort("127.0.0.1", 50051), eventLoopGroup: MultiThreadedEventLoopGroup(numberOfThreads: 1))
+    init(){
         client =  EventServiceClient(channel: ClientConnection(configuration: configuration))
-        
     }
 
     func getEvent() -> [Event]? {
-        guard let client = client else {
-            fatalError()
-        }
         do {
             let request = Empty()
             let response = try client.showEvents(request).response.wait().events

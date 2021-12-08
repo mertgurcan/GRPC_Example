@@ -14,6 +14,7 @@
 		FC74432F2752787E004F1330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC74432D2752787E004F1330 /* Main.storyboard */; };
 		FC74433127527881004F1330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC74433027527881004F1330 /* Assets.xcassets */; };
 		FC74433427527881004F1330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC74433227527881004F1330 /* LaunchScreen.storyboard */; };
+		FCA53EF127541732009BC9EA /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA53EF027541732009BC9EA /* EventCell.swift */; };
 		FCD954022752966D007C7F19 /* Events.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD954002752966C007C7F19 /* Events.grpc.swift */; };
 		FCD954032752966D007C7F19 /* Events.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD954012752966D007C7F19 /* Events.pb.swift */; };
 		FCD954052752968C007C7F19 /* GRPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD954042752968B007C7F19 /* GRPCHandler.swift */; };
@@ -31,6 +32,7 @@
 		FC74433027527881004F1330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC74433327527881004F1330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC74433527527881004F1330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA53EF027541732009BC9EA /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		FCD954002752966C007C7F19 /* Events.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.grpc.swift; sourceTree = "<group>"; };
 		FCD954012752966D007C7F19 /* Events.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.pb.swift; sourceTree = "<group>"; };
 		FCD954042752968B007C7F19 /* GRPCHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRPCHandler.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				FC7443292752787E004F1330 /* SceneDelegate.swift */,
 				FC74432B2752787E004F1330 /* ViewController.swift */,
 				FCD954042752968B007C7F19 /* GRPCHandler.swift */,
+				FCA53EF027541732009BC9EA /* EventCell.swift */,
 				FCD954002752966C007C7F19 /* Events.grpc.swift */,
 				FCD954012752966D007C7F19 /* Events.pb.swift */,
 				FC74432D2752787E004F1330 /* Main.storyboard */,
@@ -221,6 +224,7 @@
 				FC74432A2752787E004F1330 /* SceneDelegate.swift in Sources */,
 				FCD954052752968C007C7F19 /* GRPCHandler.swift in Sources */,
 				FCD954022752966D007C7F19 /* Events.grpc.swift in Sources */,
+				FCA53EF127541732009BC9EA /* EventCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
